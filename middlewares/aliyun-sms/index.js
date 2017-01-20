@@ -38,11 +38,11 @@ class AliSms {
     params.Signature = this.sign(params, httpMethod)
     return new Promise((resolve, reject) => {
       request({
-        url: httpMethod == 'POST' ? this.api_url : `${this.api_url}?${this.queryStr(params)}`,
+        url: httpMethod.toUpperCase() == 'POST' ? this.api_url : `${this.api_url}?${this.queryStr(params)}`,
         headers: {
           'Content-Type':'application/x-www-form-urlencoded' 
         },
-        method: httpMethod,
+        method: httpMethod.toUpperCase(),
         form: params
       }, (error, response, body) => {
         error ? reject(error) : resolve(body)
