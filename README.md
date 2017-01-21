@@ -2,6 +2,10 @@
 阿里云的SMS（短信服务）的NODEJS SDK
 
 ## 使用方法
+所需要几个模块
+const request = require('request')
+const crypto = require('crypto')
+
 支持POST,GET
 
     const aliSms = new AliSms({Access_Key_ID: '密钥id', Access_Key_Secret: '密钥'})
