@@ -4,7 +4,7 @@
 ## 使用方法
 支持POST,GET
 
-    const aliSms = new AliSms({Access_Key_ID: 'LTAIauFE2b3Obwqr', Access_Key_Secret: 'YQMufNSMP8yWNDMkZrbBd4keRDjLID'})
+    const aliSms = new AliSms({Access_Key_ID: '密钥id', Access_Key_Secret: '密钥'})
     var options = {
         SignName: '与立科技短信验证',
         ParamString: {
